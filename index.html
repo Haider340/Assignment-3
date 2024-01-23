@@ -1,11 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
+    <!-- Daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind link section -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#FF4240',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- font Awesome link -->
+    <script src="https://kit.fontawesome.com/0c47ae39df.js" crossorigin="anonymous"></script>
+
+
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <!-- header sectiom start here -->
+    <header class=" container mx-auto">
+        <!-- nav section -->
+        <div class="navbar bg-[#FFF] ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-[#FF4240]">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex gap-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="btn bg-color-primary text-white">Get Ticket</a>
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <!-- header section end here -->
+    <main>
+        <!-- banner section start here -->
+
+        <section class="container mx-auto my-24">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/banner-2.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/banner-3.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/banner-4.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="relative">
+                <div class="bg-black max-w-32 text-white px-8 py-8 absolute ">
+                    <h1 class="text-2xl mb-4">Meet all the heroes from the field</h1>
+                    <p class="text-base">Hockey is considered the international sport in the world due to its popularity and outstanding performance. It is an important game.We know many histories about Hockey heroes</p>
+                </div>
+            </div> -->
+
+
+        </section>
+        <!-- hr line -->
+        <div>
+            <hr class="border-dashed:[4px] mt-5  container mx-auto">
+        </div>
+        <!-- professional section1 -->
+        <section class="container mx-auto text-center my-24">
+            <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+            <p class="mt-5">Professional leagues emerged from amateur leagues. In 1904, the predominantly U.S.-based
+                International Professional Hockey League (IPHL) hosted the first Canadian professional team, the
+                Canadian Soo.</p>
+        </section>
+        <!-- progress section2 -->
+        <div>
+            <hr class="border-dashed:[4px] mt-5  container mx-auto">
+        </div>
+
+        <section class="container mx-auto my-24">
+           <div class="flex gap-12 flex-col lg:flex-row text-center ">
+            <div class="p-10 justify-center items-center py-5">
+                <div class="radial-progress text-red-500" style="--value:85;" role="progressbar">85%</div>
+                <h3 class="mt-5 mb-4 font-bold">Prayer Facility</h3>
+                <p class="text-base text-[#13131899]">We concern about everyones prayer that's why we added this facilities</p>
+               </div>
+               <div class="p-10 justify-center items-center py-5">
+                <div class="radial-progress text-blue-500" style="--value:90;" role="progressbar">90%</div>
+                <h3 class="mt-5 mb-4 font-bold">Experienced Coach</h3>
+                <p class="text-base text-[#13131899]">Here every player trained by a experienced coach.We hire international coaches for our hockeys academy.</p>
+               </div>
+               <div class="p-10 justify-center items-center py-5">
+                <div class="radial-progress text-yellow-500" style="--value:80;" role="progressbar">80%</div>
+                <h3 class="mt-5 mb-4 font-bold">Senior Player</h3>
+                <p class="text-base text-[#13131899]">Every players share his dressing room with senior player and geather knowladge about game from senior players.</p>
+               </div>
+               <div class="p-10 justify-center items-center py-5">
+                <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                <h3 class="mt-5 mb-4 font-bold">Training Ground</h3>
+                <p class="text-base text-[#13131899]">We have international training ground for prepare every players to improve  there game.</p>
+               </div>
+           </div>
+        </section>
+        <div>
+            <hr class="border-dashed:[4px] mt-5  container mx-auto">
+        </div>
+        <section class="container mx-auto my-24 text-center">
+            <h1 class="text-4xl font-extrabold">Program Sections</h1>
+            <p class="text-base text-[#13131899] mt-5">Our hockey academy is dedicated to fostering a passion for the sport of hockey, promoting skill development, and instilling values of teamwork, discipline, and sportsmanship among our players.</p>
+        </section>
+        <div>
+            <hr class="border-dashed:[4px] mt-5  container mx-auto">
+        </div>
+        <section class="container mx-auto my-24 gap-5 flex ">
+            
+        </section>
+
+
+    </main>
+
 </body>
+
 </html>
